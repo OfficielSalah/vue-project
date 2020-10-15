@@ -1,0 +1,14 @@
+  // eslint-disable quotes
+
+<template>
+  <div>
+    <h3>Hello from my Vue.js page, built with Webpack 4! landing page</h3>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {}
+  // eslint-disable-next-line semi
+};
+</script>
