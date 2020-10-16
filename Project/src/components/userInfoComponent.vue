@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Hello {{ name }} from my Vue.js page, built with Webpack 4! user info</h3>
+    <h3>Hello from my Vue.js page, built with Webpack 4! user info</h3>
   </div>
 </template>
 
