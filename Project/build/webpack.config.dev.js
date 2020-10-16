@@ -3,6 +3,8 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.config.base')
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 const HOST = 'localhost'
 const PORT = 8080
@@ -22,7 +24,7 @@ module.exports = merge(baseConfig, {
     publicPath: '/',
     quiet: true
   },
-
+  
   module: {
     rules: [
       {
@@ -43,6 +45,11 @@ module.exports = merge(baseConfig, {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'server',
+      generateStatsFile: true,
+      statsOptions: { source: false }
+    })
   ]
 })

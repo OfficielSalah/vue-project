@@ -6,7 +6,12 @@
 
 <style lang="stylus" scoped>
 .container {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Helvetica" , sans-serif ;
   max-width: 1200px;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("./fonts/HelveticaKVAFont/HelveticaKVAFont.ttf");
 }
 </style>
